@@ -112,10 +112,10 @@ param azureOpenAIResourceName string = 'openai-${resourceToken}'
 param azureOpenAISkuName string = 'S0'
 
 @description('Azure OpenAI Model Deployment Name')
-param azureOpenAIModel string = 'gpt-35-turbo-16k'
+param azureOpenAIModel string = 'gpt-35-turbo'
 
 @description('Azure OpenAI Model Name')
-param azureOpenAIModelName string = 'gpt-35-turbo-16k'
+param azureOpenAIModelName string = 'gpt-35-turbo'
 
 @description('Azure OpenAI Model Version')
 param azureOpenAIModelVersion string = '0613'
@@ -202,7 +202,7 @@ param computerVisionSkuName string = 'S1'
 
 @description('Location of Computer Vision Resource (if useAdvancedImageProcessing=true)')
 @allowed([
-  // List taken from https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/image-retrieval?tabs=python#prerequisites
+  // List taken from the https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/image-retrieval?tabs=python#prerequisites
   'eastus'
   'westus'
   'koreacentral'

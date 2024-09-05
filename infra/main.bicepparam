@@ -31,9 +31,9 @@ param azureSearchOffsetColumn = readEnvironmentVariable('AZURE_SEARCH_OFFSET_COL
 
 // OpenAI parameters(test)
 param azureOpenAIApiVersion = readEnvironmentVariable('AZURE_OPENAI_API_VERSION', '2024-02-01')
-param azureOpenAIModel = readEnvironmentVariable('AZURE_OPENAI_MODEL', 'gpt-35-turbo')
-param azureOpenAIModelName = readEnvironmentVariable('AZURE_OPENAI_MODEL_NAME', 'gpt-35-turbo')
-param azureOpenAIModelVersion = readEnvironmentVariable('AZURE_OPENAI_MODEL_VERSION', '0613')
+param azureOpenAIModel = readEnvironmentVariable('AZURE_OPENAI_MODEL', 'gpt-4o-mini')
+param azureOpenAIModelName = readEnvironmentVariable('AZURE_OPENAI_MODEL_NAME', 'gpt-4o-mini')
+param azureOpenAIModelVersion = readEnvironmentVariable('AZURE_OPENAI_MODEL_VERSION', '2024-07-18')
 param azureOpenAIModelCapacity = int(readEnvironmentVariable('AZURE_OPENAI_MODEL_CAPACITY', '30'))
 param useAdvancedImageProcessing = bool(readEnvironmentVariable('USE_ADVANCED_IMAGE_PROCESSING', 'false'))
 param advancedImageProcessingMaxImages = int(readEnvironmentVariable('ADVANCED_IMAGE_PROCESSING_MAX_IMAGES', '1'))
